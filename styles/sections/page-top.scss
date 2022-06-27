@@ -44,4 +44,14 @@
     opacity: 0.05;
     border: 1px solid $col-line-1;
   }
+  .search-bar{
+    width: 1170px;
+    height: 130px;
+    display: inline;
+    flex-direction: column;
+    align-content: center;
+    ul{
+      @include reset-list;
+    }
+  }
 }
