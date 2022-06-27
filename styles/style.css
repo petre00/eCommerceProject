@@ -198,14 +198,50 @@
   }
 }
 .page-top {
+  width: 1170px;
   display: flex;
-}
-.page-top .line {
-  border: 1px solid #151515;
+  flex-direction: column;
 }
 .page-top .top-bar {
   height: 48px;
-  background: red;
+  align-items: center;
+  display: flex;
+}
+.page-top .top-bar .contact {
+  text-align: left;
+}
+.page-top .top-bar .top-right-menu {
+  text-align: right;
+}
+.page-top .top-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-top .top-bar ul .color-2 {
+  color: #151515;
+}
+.page-top .top-bar ul li {
+  padding-left: 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6A983C;
+  display: inline;
+}
+.page-top .top-bar ul li:hover {
+  cursor: pointer;
+}
+.page-top .top-bar ul li:first-child {
+  padding-left: 0;
+}
+.page-top .line {
+  display: flex;
+  align-self: center;
+  width: 1170px;
+  opacity: 0.05;
+  border: 1px solid #151515;
 }
 
 /*# sourceMappingURL=style.css.map */

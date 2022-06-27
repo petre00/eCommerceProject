@@ -1,13 +1,47 @@
 @import "../partials/variables";
+@import "../partials/mixins";
 
 .page-top{
+  width: 1170px;
   display: flex;
-  .line{
-    border: 1px solid #151515;;
-  }
+  flex-direction: column;
   .top-bar{
     height: 48px;
-    background: red;
-
+    align-items: center;
+    display: flex;
+    .contact{
+      text-align: left;
+    }
+    .top-right-menu{
+      text-align: right;
+    }
+    ul{
+        @include reset-list;
+      .color-2 {
+        color: $col-text-2;
+      }
+      li{
+        padding-left: 33px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: $col-text-1;
+        display: inline;
+        &:hover{
+          cursor: pointer;
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .line{
+    display: flex;
+    align-self: center;
+    width: 1170px;
+    opacity: 0.05;
+    border: 1px solid $col-line-1;
   }
 }
