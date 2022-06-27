@@ -1,0 +1,28 @@
+.row  {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1260px;
+}
+
+$colwidth: calc(100% / 12);
+@for $i from 1 through 12 {
+
+  .col-#{$i} {width: $colwidth * $i;}
+
+  @media(max-width: 1024px)
+
+  {
+    .col-md-#{$i} {
+      width: $colwidth * $i;
+      display: inline-flex;
+    }
+  @media(max-width: 768px)
+
+  {
+    .col-md-#{$i} {
+      width: $colwidth * $i;
+      display: inline-flex;
+    }
+  }
+  }
+}
