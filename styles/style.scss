@@ -1,11 +1,13 @@
-@import "grid-system/grid.css";
+@import "grid-system/grid";
 
-@import "general/footer.css";
-@import "general/listing-products.css";
-@import "general/menu.css";
-@import "general/top.css";
+@import "general/footer";
+@import "general/listing-products";
+@import "general/menu";
+@import "general/top";
 
-@import "partials/classes.css";
-@import "partials/mixins.css";
-@import "partials/variables.css";
+@import "partials/classes";
+@import "partials/mixins";
+@import "partials/variables";
+
+@import "sections/page-top";
 

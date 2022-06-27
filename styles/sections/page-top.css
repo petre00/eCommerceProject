@@ -1,0 +1,9 @@
+@import "../partials/variables.css";
+.page-top {
+  background: lime;
+}
+.page-top .top-bar {
+  background: red;
+}
+
+/*# sourceMappingURL=page-top.css.map */
