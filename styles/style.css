@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -198,6 +199,10 @@
     display: inline-flex;
   }
 }
+.page-header {
+  background: #FFFFFF;
+}
+
 .page-top {
   width: 1170px;
   display: flex;
@@ -335,6 +340,7 @@
   display: flex;
   align-items: center;
   height: 55px;
+  width: 1260px;
   background: #F9F9F9;
 }
 .mainmenu span {
@@ -356,6 +362,86 @@
 }
 .mainmenu i:hover {
   cursor: pointer;
+}
+
+.left-menu .left-menu-category {
+  display: flex;
+  flex-direction: column;
+}
+.left-menu .left-menu-category .title {
+  margin-top: 64px;
+  margin-left: 45px;
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration-line: none;
+  color: #151515;
+}
+.left-menu .left-menu-category span {
+  margin-bottom: 12px;
+  margin-left: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #6A983C;
+}
+.left-menu .more-button {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+  margin-left: 45px;
+  width: 179px;
+  height: 48px;
+  background: #F5F5F5;
+  border-radius: 12px;
+}
+.left-menu .more-button span {
+  margin-left: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.left-menu .more-button i {
+  margin-left: 6px;
+  font-size: 18px;
+}
+
+.category-photos {
+  display: flex;
+  align-items: center;
+}
+.category-photos .banner {
+  margin-left: 31px;
+  width: 420px;
+  height: 280px;
+  background: #F4F8EC;
+  border-radius: 12px;
+}
+.category-photos .banner span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+}
+
+body {
+  background: #F9F9F9;
+}
+
+.category-page {
+  height: 410px;
+  background: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

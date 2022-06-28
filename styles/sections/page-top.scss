@@ -3,7 +3,9 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
-
+.page-header{
+  background: $col-backg-2;
+}
 .page-top {
   width: 1170px;
   display: flex;
@@ -159,6 +161,7 @@
   display: flex;
   align-items: center;
   height: 55px;
+  width: 1260px;
   background: $col-backg-1;
   span{
     margin-left: 45px;

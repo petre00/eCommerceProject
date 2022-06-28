@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"category-menu.css"}
+{"version":3,"sourceRoot":"","sources":["category-menu.scss","../partials/variables.scss"],"names":[],"mappings":"AAAQ;AAKR;EACE;EACA,YCGY","file":"category-menu.css"}

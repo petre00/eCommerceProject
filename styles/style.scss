@@ -10,4 +10,14 @@
 @import "partials/variables";
 
 @import "sections/page-top";
+@import "sections/category-menu";
+
+body{
+  background: $col-backg-1;
+}
+
+.category-page{
+  height: 410px;
+  background: $col-backg-2;
+}
 
