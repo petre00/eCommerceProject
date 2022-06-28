@@ -71,7 +71,17 @@
     height: 280px;
     background: $col-backg-4;
     border-radius: 12px;
+    .title{
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      color: $col-line-1;
+    }
     span{
+      margin-left: 33px;
+      margin-top: 48px;
       font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 600;

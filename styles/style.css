@@ -426,7 +426,17 @@
   background: #F4F8EC;
   border-radius: 12px;
 }
+.category-photos .banner .title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #151515;
+}
 .category-photos .banner span {
+  margin-left: 33px;
+  margin-top: 48px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
