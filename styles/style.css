@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -246,14 +247,115 @@
 .page-top .search-bar {
   width: 1170px;
   height: 130px;
-  display: inline;
-  flex-direction: column;
-  align-content: center;
+  display: flex;
+  align-items: center;
+}
+.page-top .search-bar .logo {
+  justify-content: left;
+}
+.page-top .search-bar .logo img {
+  margin: 45px;
+}
+.page-top .search-bar .search {
+  display: flex;
+  justify-content: center;
+}
+.page-top .search-bar .search .search-box {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 42px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+.page-top .search-bar .search .search-box .vline {
+  height: 20px;
+  width: 0;
+  margin-left: 29px;
+  border: 1px solid #D1D1D1;
+}
+.page-top .search-bar .search .search-box .icon-arrow-down {
+  font-size: 8px;
+  color: #6A983C;
+}
+.page-top .search-bar .search .search-box .icon-arrow-down:hover {
+  cursor: pointer;
+}
+.page-top .search-bar .search .search-box .categories {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.page-top .search-bar .search .search-box .categories:hover {
+  cursor: pointer;
+}
+.page-top .search-bar .search .search-box span {
+  flex-grow: 2;
+  margin-left: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.page-top .search-bar .search .search-box .icon-search {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 18px;
+  font-size: 14px;
+}
+.page-top .search-bar .search .search-box .icon-search:hover {
+  cursor: pointer;
+}
+.page-top .search-bar .search-right {
+  display: flex;
+  justify-content: right;
+}
+.page-top .search-bar .search-right i {
+  font-size: 20px;
+}
+.page-top .search-bar .search-right i:hover {
+  cursor: pointer;
 }
 .page-top .search-bar ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.page-top .search-bar ul li {
+  display: inline;
+}
+
+.mainmenu {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  background: #F9F9F9;
+}
+.mainmenu span {
+  margin-left: 45px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+.mainmenu span:hover {
+  cursor: pointer;
+}
+.mainmenu i {
+  margin-left: 6px;
+  font-size: 6px;
+  color: #6A983C;
+}
+.mainmenu i:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
