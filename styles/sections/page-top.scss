@@ -3,9 +3,10 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
-.page-header{
+.page-header {
   background: $col-backg-2;
 }
+
 .page-top {
   width: 1170px;
   display: flex;
@@ -33,7 +34,7 @@
 
       li {
         padding-left: 33px;
-        font-style: normal;
+        @include open-sans-normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -89,8 +90,21 @@
         .vline {
           height: 20px;
           width: 0;
-          margin-left: 29px;
+          margin-left: 24px;
           border: 1px solid $col-div-1;
+        }
+
+        input {
+          background: transparent;
+          border: none;
+          width: 269px;
+          height: 38px;
+          margin-left: 24px;
+          @include open-sans-normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: $col-text-3;
         }
 
         .icon-arrow-down {
@@ -103,8 +117,7 @@
         }
 
         .categories {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
+          @include popins-normal;
           font-weight: 700;
           font-size: 15px;
           line-height: 22px;
@@ -118,19 +131,20 @@
         span {
           flex-grow: 2;
           margin-left: 16px;
-          font-family: 'Open Sans', sans-serif;
-          font-style: normal;
+          @include open-sans-normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 19px;
           color: $col-text-3;
         }
-        .icon-search{
+
+        .icon-search {
           display: flex;
           justify-content: flex-end;
           margin-right: 18px;
-          font-size: 14px;
-          &:hover{
+          font-size: 16px;
+
+          &:hover {
             cursor: pointer;
           }
         }
@@ -140,8 +154,10 @@
     .search-right {
       display: flex;
       justify-content: right;
+
       i {
         font-size: 20px;
+
         &:hover {
           cursor: pointer;
         }
@@ -153,32 +169,55 @@
 
       li {
         display: inline;
+
+        .basket-number {
+          position: absolute;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          height: 16px;
+          width: 16px;
+          margin-left: 30px;
+          top: 114px;
+          background: $col-backg-5;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 50%;
+          @include popins-normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          color: $col-backg-2;
+        }
       }
     }
   }
 }
-.mainmenu{
+
+.mainmenu {
   display: flex;
   align-items: center;
   height: 55px;
   width: 1260px;
   background: $col-backg-1;
-  span{
+
+  span {
     margin-left: 45px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    @include popins-normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
     color: $col-line-1;
+
     &:hover {
       cursor: pointer;
     }
   }
-  i{
+
+  i {
     margin-left: 6px;
     font-size: 6px;
     color: $col-text-4;
+
     &:hover {
       cursor: pointer;
     }
