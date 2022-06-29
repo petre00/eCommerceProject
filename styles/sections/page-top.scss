@@ -29,7 +29,9 @@
       @include reset-list;
 
       .color-2 {
-        color: $col-text-2;
+        a:link {
+          color: $col-text-2;
+        }
       }
 
       li {
@@ -44,7 +46,8 @@
           line-height: 16px;
           color: $col-text-1;
         }
-        a:visited{
+
+        a:visited {
           text-decoration: none;
           color: $col-text-1;
         }

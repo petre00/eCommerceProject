@@ -224,7 +224,7 @@
   padding: 0;
   list-style: none;
 }
-.page-top .top-bar ul .color-2 {
+.page-top .top-bar ul .color-2 a:link {
   color: #151515;
 }
 .page-top .top-bar ul li {
@@ -482,7 +482,7 @@
   margin-left: 31px;
   width: 420px;
   height: 280px;
-  background: #F4F8EC;
+  border: 2px solid #F4F8EC;
   border-radius: 12px;
 }
 .category-photos .banner .title {
