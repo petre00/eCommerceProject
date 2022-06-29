@@ -229,13 +229,20 @@
 }
 .page-top .top-bar ul li {
   padding-left: 33px;
+  display: inline;
+}
+.page-top .top-bar ul li a:link {
+  text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #6A983C;
-  display: inline;
+}
+.page-top .top-bar ul li a:visited {
+  text-decoration: none;
+  color: #6A983C;
 }
 .page-top .top-bar ul li:hover {
   cursor: pointer;
@@ -416,12 +423,18 @@
 .left-menu .left-menu-category span {
   margin-bottom: 12px;
   margin-left: 45px;
+}
+.left-menu .left-menu-category span a:link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   text-decoration-line: underline;
+  color: #6A983C;
+}
+.left-menu .left-menu-category span a:visited {
+  text-decoration: none;
   color: #6A983C;
 }
 .left-menu .more-button {
@@ -434,6 +447,14 @@
   background: #F5F5F5;
   border-radius: 12px;
 }
+.left-menu .more-button a:link {
+  text-decoration: none;
+  color: #151515;
+}
+.left-menu .more-button a:visited {
+  text-decoration: none;
+  color: #151515;
+}
 .left-menu .more-button span {
   margin-left: 16px;
   font-family: "Poppins", sans-serif;
@@ -445,7 +466,10 @@
 }
 .left-menu .more-button i {
   margin-left: 6px;
-  font-size: 18px;
+  font-size: 20px;
+}
+.left-menu .more-button i:hover {
+  cursor: pointer;
 }
 
 .category-photos {
@@ -453,6 +477,8 @@
   align-items: center;
 }
 .category-photos .banner {
+  display: flex;
+  flex-direction: column;
   margin-left: 31px;
   width: 420px;
   height: 280px;
@@ -460,6 +486,8 @@
   border-radius: 12px;
 }
 .category-photos .banner .title {
+  margin-left: 33px;
+  margin-top: 8px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -476,6 +504,38 @@
   font-size: 12px;
   line-height: 18px;
   color: #6A983C;
+}
+.category-photos .banner .banner-button {
+  display: flex;
+  align-items: center;
+  margin-top: 94px;
+  margin-left: 32px;
+  padding-left: 16px;
+  width: 163px;
+  height: 47px;
+  border: 2px solid #92C064;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151515;
+}
+.category-photos .banner .banner-button a:link {
+  text-decoration: none;
+  color: #151515;
+}
+.category-photos .banner .banner-button a:visited {
+  text-decoration: none;
+  color: #151515;
+}
+.category-photos .banner i {
+  font-size: 20px;
+  color: #6A983C;
+}
+.category-photos .banner i:hover {
+  cursor: pointer;
 }
 
 body {

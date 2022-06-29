@@ -24,12 +24,18 @@
     span {
       margin-bottom: 12px;
       margin-left: 45px;
+      a:link {
       @include open-sans-normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 19px;
       text-decoration-line: underline;
       color: $col-text-4;
+      }
+      a:visited{
+        text-decoration: none;
+        color: $col-text-4;
+      }
     }
   }
 
@@ -43,6 +49,16 @@
     background: $col-backg-3;
     border-radius: 12px;
 
+    a:link {
+      text-decoration: none;
+      color: $col-line-1;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: $col-line-1;
+    }
+
     span {
       margin-left: 16px;
       @include popins-normal;
@@ -54,7 +70,10 @@
 
     i {
       margin-left: 6px;
-      font-size: 18px;
+      font-size: 20px;
+    }
+    i:hover{
+      cursor: pointer;
     }
   }
 }
@@ -64,6 +83,8 @@
   align-items: center;
 
   .banner {
+    display: flex;
+    flex-direction: column;
     margin-left: 31px;
     width: 420px;
     height: 280px;
@@ -71,6 +92,8 @@
     border-radius: 12px;
 
     .title {
+      margin-left: 33px;
+      margin-top: 8px;
       @include popins-normal;
       font-weight: 600;
       font-size: 22px;
@@ -81,11 +104,44 @@
     span {
       margin-left: 33px;
       margin-top: 48px;
+
       @include popins-normal;
       font-weight: 600;
       font-size: 12px;
       line-height: 18px;
-      color: #6A983C;
+      color: $col-text-4;
+    }
+    .banner-button{
+      display: flex;
+      align-items: center;
+      margin-top: 94px;
+      margin-left: 32px;
+      padding-left: 16px;
+      width: 163px;
+      height: 47px;
+      border: 2px solid $col-backg-6;
+      border-radius: 12px;
+      @include popins-normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      color: $col-text-2;
+      a:link {
+        text-decoration: none;
+        color: $col-text-2;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: $col-text-2;
+      }
+    }
+    i{
+      font-size: 20px;
+      color: $col-text-4;
+    }
+    i:hover{
+      cursor: pointer;
     }
   }
 }
