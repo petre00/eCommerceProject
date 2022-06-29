@@ -4,6 +4,7 @@
 @import "../partials/mixins";
 
 .left-menu {
+
   .left-menu-category {
     display: flex;
     flex-direction: column;
@@ -12,8 +13,7 @@
       margin-top: 64px;
       margin-left: 45px;
       margin-bottom: 16px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
+      @include popins-normal;
       font-weight: 600;
       font-size: 18px;
       line-height: 27px;
@@ -24,8 +24,7 @@
     span {
       margin-bottom: 12px;
       margin-left: 45px;
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
+      @include open-sans-normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 19px;
@@ -46,8 +45,7 @@
 
     span {
       margin-left: 16px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
+      @include popins-normal;
       font-weight: 700;
       font-size: 15px;
       line-height: 22px;
@@ -71,19 +69,19 @@
     height: 280px;
     background: $col-backg-4;
     border-radius: 12px;
-    .title{
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
+
+    .title {
+      @include popins-normal;
       font-weight: 600;
       font-size: 22px;
       line-height: 33px;
       color: $col-line-1;
     }
-    span{
+
+    span {
       margin-left: 33px;
       margin-top: 48px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
+      @include popins-normal;
       font-weight: 600;
       font-size: 12px;
       line-height: 18px;
