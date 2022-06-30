@@ -121,5 +121,8 @@
     font-size: 15px;
     line-height: 22px;
     color: $col-backg-2;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }

@@ -255,6 +255,7 @@
   display: flex;
   align-self: center;
   width: 1170px;
+  background: #151515;
   opacity: 0.05;
   border: 1px solid #151515;
 }
@@ -659,6 +660,9 @@
   font-size: 15px;
   line-height: 22px;
   color: #FFFFFF;
+}
+.product .buy-button:hover {
+  cursor: pointer;
 }
 
 body {
