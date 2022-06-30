@@ -567,8 +567,12 @@
   border-radius: 12px;
 }
 .product .product-photo .discount-percent {
-  margin-left: 20px;
+  text-align: center;
+  margin-left: 12px;
   margin-top: 12px;
+  width: 54px;
+  background: #F4F8EC;
+  border-radius: 12px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-style: normal;
@@ -618,7 +622,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #A9A9A9;
+  color: #575757;
 }
 .product .product-title {
   margin-left: 16px;
