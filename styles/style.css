@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -291,6 +292,7 @@
 .page-top .search-bar .search .search-box input {
   background: transparent;
   border: none;
+  outline: none;
   width: 269px;
   height: 38px;
   margin-left: 24px;
@@ -300,6 +302,10 @@
   font-size: 14px;
   line-height: 19px;
   color: #A9A9A9;
+}
+.page-top .search-bar .search .search-box input:active {
+  border: none;
+  outline: none;
 }
 .page-top .search-bar .search .search-box .icon-arrow-down {
   font-size: 8px;
@@ -546,6 +552,11 @@ body {
 
 .category-page {
   height: 410px;
+  background: #FFFFFF;
+}
+
+.best-selling {
+  height: 460px;
   background: #FFFFFF;
 }
 
