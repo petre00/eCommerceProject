@@ -3,3 +3,119 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
+.products-display {
+  display: flex;
+
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  margin-left: 32px;
+  width: 269px;
+  height: 323px;
+  background: $col-backg-2;
+  border: 1px solid $col-div-1;
+  border-radius: 12px;
+
+  .product-photo {
+    height: 180px;
+    width: 237px;
+    margin: 16px;
+    background: $col-backg-1;
+    border-radius: 12px;
+    .discount-percent{
+      margin-left: 20px;
+      margin-top: 12px;
+      @include popins-normal;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: $col-text-4;
+    }
+  }
+
+  .price {
+    display: flex;
+    justify-content: space-between;
+
+    .price-v {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin-left: 16px;
+        @include popins-normal;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: line-through;
+        color: $col-text-3;
+      }
+
+      .price-current {
+        margin-top: 16px;
+        margin-left: 16px;
+        @include popins-normal;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        text-decoration-line: none;
+        color: $col-line-1;
+      }
+
+      .small-description {
+        margin-left: 16px;
+        @include popins-normal;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: $col-text-3;
+      }
+    }
+
+  }
+
+  .product-title {
+    margin-left: 16px;
+    @include popins-normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: $col-line-1;
+  }
+
+  .small-description {
+    margin-left: 16px;
+    @include open-sans-normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $col-text-5;
+  }
+
+  .buy-button {
+    align-self: flex-end;
+    margin-top: 21px;
+    margin-right: 16px;
+    width: 90px;
+    height: 36px;
+    background: $col-text-4;
+    border: 2px solid $col-bord-1;
+    border-radius: 12px;
+    @include popins-normal;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $col-backg-2;
+  }
+}
