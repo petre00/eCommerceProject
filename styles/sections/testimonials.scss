@@ -3,144 +3,136 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
-// Carousel option
-$carouselWidth: 369px;
-$carouselHeight: 198px;
-$vertical: false;
-$speed: .4s;
-$easing: cubic-bezier(0.19, 1, 0.22, 1);
+.testimonials-head {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 1170px;
 
-// Slides option
-$slides: ($col-backg-1, $col-backg-1, $col-backg-1, $col-backg-1, $col-backg-1);
-$nbrItem: length($slides);
-
-html, body {
-  height: 100%;
-}
-
-.carousel {
-  width: $carouselWidth;
-  height: $carouselHeight;
-  overflow: hidden;
-}
-
-.wrap-slides {
-  width: $carouselWidth * $nbrItem;
-  height: $carouselHeight;
-  position: relative;
-  padding-top: 138px;
-
-  .slide {
-    width: $carouselWidth / $nbrItem;
-    height: $carouselHeight;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: all $speed $easing;
-
+  span {
+    margin-top: 69px;
     @include popins-normal;
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
-    text-align: center;
-    color: #151515;
-
-    @if $vertical == false {
-      transform: translateX($carouselWidth * -1);
-    } @else {
-      transform: translateY($carouselHeight * -1);
-    }
-
-    @for $i from 1 through $nbrItem {
-      &:nth-of-type(#{$i}) {
-        background: nth($slides, $i);
-      }
-    }
-
-    & > div {
-      display: inline-block;
-      vertical-align: middle;
-      line-height: 1.2;
-      font-size: 0.8em;
-
-      h1 {
-        font-size: 2em;
-        margin-bottom: 50px;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-
-      span {
-        display: block;
-        font-size: 0.8em;
-        opacity: 0.6;
-      }
-    }
-
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $col-line-1;
   }
 
-  // All the navigation
+  .testimonials-button {
+    display: flex;
+    align-self: center;
+    margin-top: 65px;
+    height: 35px;
+    width: 98px;
 
-  input {
-    display: block;
-    position: relative;
-    z-index: 10;
-    width: 10px;
-    height: 10px;
-    float: left;
-    margin: 0 0 0 10px;
+    @include popins-normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $col-line-1;
+    background: $col-backg-2;
+    border-radius: 12px;
 
-    border: none;
-    background: black;
-    border-radius: 100%;
-    outline: none;
-    -webkit-appearance: none;
-    opacity: 0.3;
-    transition: all $speed $easing;
+    i {
+      color: $col-text-4;
+    }
+  }
+}
 
-    cursor: pointer;
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 
-    &:checked {
-      opacity: 1;
+  .faders {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
-      @for $i from 1 through $nbrItem {
-        &:nth-of-type(#{$i}) ~ div:nth-of-type(#{$i}) {
-          z-index: 3;
-          @if $vertical == false {
-            transform: translateX(0);
-          } @else {
-            transform: translateY(0);
-          }
-        }
+    .left,
+    .right {
+      position: absolute;
+      z-index: 2;
+      width: 20%;
+      height: 100%;
+    }
+
+    .left {
+      background: linear-gradient(
+                      to right,
+                      rgba(245, 245, 245, 1) 0%,
+                      rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    .right {
+      right: 0;
+      background: linear-gradient(
+                      to left,
+                      rgba(245, 245, 245, 1) 0%,
+                      rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+
+  .items {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: carouselAnim 60s infinite alternate linear;
+
+    .entry {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      width: 369px;
+      background-color: $col-backg-2;
+      margin: 1em;
+      padding: 0.5em;
+      border-radius: 12px;
+      border: 1px solid $col-bord-2;
+
+      .circle {
+        top: 207px;
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        background: #F5F5F5;
+        border-radius: 50%;
       }
 
-      @for $i from 1 through $nbrItem {
-        &:nth-of-type(#{$i}) ~ div:nth-of-type(#{$i}) ~ div {
-          @if $vertical == false {
-            transform: translateX($carouselWidth);
-          } @else {
-            transform: translateY($carouselHeight);
-          }
-        }
+      p {
+        padding: 1em;
+        text-align: center;
+        @include popins-normal;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $col-text-3;
       }
 
-      &:nth-of-type(#{$nbrItem}) ~ div:first-of-type {
-        @if $vertical == false {
-          transform: translateX($carouselWidth) !important;
-        } @else {
-          transform: translateY($carouselHeight) !important;
-        }
-      }
-
-      &:first-of-type ~ div:nth-of-type(#{$nbrItem}) {
-        @if $vertical == false {
-          transform: translateX($carouselWidth * -1) !important;
-        } @else {
-          transform: translateY($carouselHeight * -1) !important;
-        }
+      .name {
+        @include popins-normal;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: $col-line-1;
       }
     }
   }
 }
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (5 * 300px)));
+  }
+}
+

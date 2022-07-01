@@ -24,15 +24,17 @@
     span {
       margin-bottom: 12px;
       margin-left: 45px;
+
       a:link {
-      @include open-sans-normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      text-decoration-line: underline;
-      color: $col-text-4;
+        @include open-sans-normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: $col-text-4;
       }
-      a:visited{
+
+      a:visited {
         text-decoration: none;
         color: $col-text-4;
       }
@@ -72,7 +74,8 @@
       margin-left: 6px;
       font-size: 20px;
     }
-    i:hover{
+
+    i:hover {
       cursor: pointer;
     }
   }
@@ -111,7 +114,8 @@
       line-height: 18px;
       color: $col-text-4;
     }
-    .banner-button{
+
+    .banner-button {
       display: flex;
       align-items: center;
       margin-top: 94px;
@@ -126,6 +130,7 @@
       font-size: 15px;
       line-height: 18px;
       color: $col-text-2;
+
       a:link {
         text-decoration: none;
         color: $col-text-2;
@@ -136,11 +141,13 @@
         color: $col-text-2;
       }
     }
-    i{
+
+    i {
       font-size: 20px;
       color: $col-text-4;
     }
-    i:hover{
+
+    i:hover {
       cursor: pointer;
     }
   }
