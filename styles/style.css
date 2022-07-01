@@ -567,6 +567,7 @@
   width: 237px;
   margin: 16px;
   background: #F9F9F9;
+  border: 1px solid #F9F9F9;
   border-radius: 12px;
 }
 .product .product-photo .discount-percent {
