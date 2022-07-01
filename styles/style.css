@@ -671,6 +671,7 @@
 .testimonials-head {
   display: inline-flex;
   justify-content: space-between;
+  text-align: center;
   align-content: center;
   width: 1170px;
 }
@@ -685,22 +686,33 @@
   color: #151515;
 }
 .testimonials-head .testimonials-button {
-  display: flex;
-  align-self: center;
-  top: 65px;
+  margin-top: 65px;
   height: 35px;
   width: 98px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
-  line-height: 22px;
   color: #151515;
   background: #FFFFFF;
   border-radius: 12px;
 }
+.testimonials-head .testimonials-button a:link {
+  text-decoration: none;
+  color: #151515;
+}
+.testimonials-head .testimonials-button a:visited {
+  text-decoration: none;
+  color: #151515;
+}
 .testimonials-head .testimonials-button i {
+  padding: 0;
+  align-self: center;
+  font-size: 20px;
   color: #6A983C;
+}
+.testimonials-head .testimonials-button i:hover {
+  cursor: pointer;
 }
 
 .container {
