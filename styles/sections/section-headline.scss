@@ -5,12 +5,12 @@
 
 .title-headline {
   width: 1170px;
-  margin-top: 70px;
   margin-left: 45px;
   display: inline-flex;
   justify-content: space-between;
 
   span {
+    padding-top: 70px;
     @include popins-normal;
     font-style: normal;
     font-weight: 600;
@@ -20,6 +20,7 @@
   }
 
   .headline-buton {
+    margin-top: 70px;
     span {
       @include popins-normal;
       font-style: normal;
@@ -40,6 +41,8 @@
     }
 
     i {
+      padding: 0;
+      align-self: center;
       font-size: 20px;
       color: $col-text-4;
     }

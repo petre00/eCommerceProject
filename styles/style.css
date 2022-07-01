@@ -797,12 +797,12 @@ html, body {
 
 .title-headline {
   width: 1170px;
-  margin-top: 70px;
   margin-left: 45px;
   display: inline-flex;
   justify-content: space-between;
 }
 .title-headline span {
+  padding-top: 70px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-style: normal;
@@ -810,6 +810,9 @@ html, body {
   font-size: 18px;
   line-height: 27px;
   color: #151515;
+}
+.title-headline .headline-buton {
+  margin-top: 70px;
 }
 .title-headline .headline-buton span {
   font-family: "Poppins", sans-serif;
@@ -829,6 +832,8 @@ html, body {
   color: #151515;
 }
 .title-headline .headline-buton i {
+  padding: 0;
+  align-self: center;
   font-size: 20px;
   color: #6A983C;
 }
