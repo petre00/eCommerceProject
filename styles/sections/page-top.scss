@@ -41,9 +41,7 @@
         a:link {
           text-decoration: none;
           @include open-sans-normal;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 16px;
+          @include font-400-12-16;
           color: $col-text-1;
         }
 

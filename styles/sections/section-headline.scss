@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap');
+
+@import "../partials/variables";
+@import "../partials/mixins";
+
+.title-headline {
+  width: 1170px;
+  margin-top: 70px;
+  margin-left: 45px;
+  display: inline-flex;
+  justify-content: space-between;
+
+  span {
+    @include popins-normal;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $col-text-2;
+  }
+
+  .headline-buton {
+    span {
+      @include popins-normal;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 22px;
+      color: $col-text-2;
+    }
+
+    a:link {
+      text-decoration: none;
+      color: $col-text-2;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: $col-text-2;
+    }
+
+    i {
+      font-size: 20px;
+      color: $col-text-4;
+    }
+
+    i:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.headline-products {
+  display: flex;
+}

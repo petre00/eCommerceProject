@@ -25,7 +25,8 @@
     margin: 16px;
     background: $col-backg-1;
     border-radius: 12px;
-    .discount-percent{
+
+    .discount-percent {
       text-align: center;
       margin-left: 12px;
       margin-top: 12px;
@@ -78,9 +79,7 @@
         margin-left: 16px;
         @include popins-normal;
         font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
+        @include font-400-12-16;
         color: $col-text-5;
       }
     }
@@ -100,9 +99,7 @@
     margin-left: 16px;
     @include open-sans-normal;
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
+    @include font-400-12-16;
     color: $col-text-5;
   }
 
@@ -121,7 +118,8 @@
     font-size: 15px;
     line-height: 22px;
     color: $col-backg-2;
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
   }

@@ -12,6 +12,8 @@
 @import "sections/page-top";
 @import "sections/category-menu";
 @import "sections/best-selling";
+@import "sections/testimonials";
+@import "sections/section-headline";
 
 body{
   background: $col-backg-1;
@@ -26,5 +28,25 @@ body{
 
 .best-selling{
   height: 460px;
+  background: $col-backg-2;
+}
+
+.testimonials{
+  height: 425px;
+  background: $col-backg-1;
+}
+
+.headline{
+  height: 530px;
+  background: $col-backg-2;
+}
+
+.section-blog{
+  height: 596px;
+  background: $col-backg-2;
+}
+
+.footer{
+  height: 556px;
   background: $col-backg-2;
 }
