@@ -14,40 +14,42 @@
 @import "sections/best-selling";
 @import "sections/testimonials";
 @import "sections/section-headline";
+@import "sections/section-blogpreview";
 
-body{
+
+body {
   background: $col-backg-1;
   margin: 0;
   padding: 0;
 }
 
-.category-page{
+.category-page {
   height: 410px;
   background: $col-backg-2;
 }
 
-.best-selling{
+.best-selling {
   height: 460px;
   background: $col-backg-2;
 }
 
-.testimonials{
+.testimonials {
   justify-content: center;
   height: 425px;
   background: $col-backg-1;
 }
 
-.headline{
+.headline {
   height: 530px;
   background: $col-backg-2;
 }
 
-.section-blog{
+.section-blog {
   height: 596px;
   background: $col-backg-2;
 }
 
-.footer{
+.footer {
   height: 556px;
   background: $col-backg-2;
 }
