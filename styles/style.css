@@ -478,7 +478,7 @@
 }
 .left-menu .more-button i {
   margin-left: 6px;
-  font-size: 20px;
+  font-size: 10px;
 }
 .left-menu .more-button i:hover {
   cursor: pointer;
@@ -543,7 +543,7 @@
   color: #151515;
 }
 .category-photos .banner i {
-  font-size: 20px;
+  font-size: 10px;
   color: #6A983C;
 }
 .category-photos .banner i:hover {
@@ -711,7 +711,7 @@
 .testimonials-head .testimonials-button i {
   padding: 0;
   align-self: center;
-  font-size: 20px;
+  font-size: 10px;
   color: #6A983C;
 }
 .testimonials-head .testimonials-button i:hover {
@@ -837,7 +837,7 @@
 .title-headline .headline-buton i {
   padding: 0;
   align-self: center;
-  font-size: 20px;
+  font-size: 10px;
   color: #6A983C;
 }
 .title-headline .headline-buton i:hover {

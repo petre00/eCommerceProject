@@ -1,7 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 14 10" style="enable-background:new 0 0 14 10;" xml:space="preserve">
-<path d="M4.6,9.7c-0.2,0-0.4-0.1-0.5-0.2L1,6.4C0.7,6.1,0.7,5.6,1,5.3s0.8-0.3,1.1,0l2.5,2.5l7.3-7.3c0.3-0.3,0.8-0.3,1.1,0
-	s0.3,0.8,0,1.1L5.2,9.4C5,9.6,4.8,9.7,4.6,9.7z"/>
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 12.45 9.4250002"
+   xml:space="preserve"
+   sodipodi:docname="check.svg"
+   width="12.45"
+   height="9.4250002"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs7" /><sodipodi:namedview
+   id="namedview5"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="28.708535"
+   inkscape:cx="6.2176631"
+   inkscape:cy="4.7198507"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<path
+   id="path2"
+   style="color:#000000;fill:#000000;-inkscape-stroke:none"
+   d="M 11.675781,0 C 11.475781,0 11.275,0.07460938 11.125,0.22460938 l -7.3007812,7.30078122 -2.5,-2.5 c -0.3,-0.3 -0.79960942,-0.3 -1.09960942,0 -0.30000001,0.3 -0.30000001,0.7996094 0,1.0996094 L 3.3242188,9.2246094 c 0.1,0.1 0.2999999,0.2011718 0.5,0.2011718 C 4.0242187,9.4257813 4.2257812,9.325 4.4257812,9.125 L 12.224609,1.3242188 c 0.3,-0.3000001 0.3,-0.79960942 0,-1.09960942 C 12.074609,0.07460938 11.875781,0 11.675781,0 Z" />
 </svg>

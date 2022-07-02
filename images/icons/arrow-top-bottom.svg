@@ -1,12 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<style type="text/css">
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 7.8499999 11.775"
+   xml:space="preserve"
+   sodipodi:docname="arrow-top-bottom.svg"
+   width="7.8499999"
+   height="11.775"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs11" /><sodipodi:namedview
+   id="namedview9"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="12.6875"
+   inkscape:cx="-9.5763547"
+   inkscape:cy="10.049261"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
 	.st0{fill:#151515;}
 </style>
-<path class="st0" d="M11.2,6.6c-0.2,0-0.4-0.1-0.5-0.2L8,3.7L5.4,6.3c-0.3,0.3-0.8,0.3-1.1,0S4,5.5,4.3,5.2L7,2.5C7.5,2,8.4,2,9,2.5
-	l2.7,2.7C12,5.6,12,6,11.7,6.3C11.6,6.5,11.4,6.6,11.2,6.6z"/>
-<path class="st0" d="M8,13.9c-0.4,0-0.7-0.1-1-0.4l-2.7-2.7C4,10.4,4,10,4.3,9.7s0.8-0.3,1.1,0L8,12.3l2.6-2.6
-	c0.3-0.3,0.8-0.3,1.1,0s0.3,0.8,0,1.1L9,13.5C8.8,13.7,8.4,13.9,8,13.9z"/>
+<path
+   id="path4"
+   class="st0"
+   d="M 3.8867188,0 C 3.5242187,0 3.1757812,0.125 2.9257812,0.375 L 0.22460938,3.0742188 c -0.30000001,0.3 -0.30000001,0.8015625 0,1.1015624 0.3,0.3 0.79960932,0.3 1.09960942,0 L 3.9257812,1.5742188 6.625,4.2753906 c 0.1,0.1 0.3,0.1992188 0.5,0.1992188 0.2,0 0.4,-0.098828 0.5,-0.2988282 0.3,-0.3 0.3,-0.7015625 0,-1.1015624 L 4.9257812,0.375 C 4.6257812,0.125 4.2492187,0 3.8867188,0 Z M 0.77539062,7.3496094 c -0.2,0 -0.40078124,0.074609 -0.55078124,0.2246094 -0.30000001,0.3 -0.30000001,0.7015624 0,1.1015624 L 2.9257812,11.375 c 0.3000001,0.3 0.6000001,0.400391 1,0.400391 0.4000001,0 0.8,-0.200391 1,-0.400391 L 7.625,8.6757812 c 0.3,-0.3 0.3,-0.8015625 0,-1.1015624 -0.3,-0.3 -0.7996094,-0.3 -1.0996094,0 L 3.9257812,10.175781 1.3242188,7.5742188 C 1.1742187,7.4242188 0.97539063,7.3496094 0.77539062,7.3496094 Z" />
+
 </svg>
