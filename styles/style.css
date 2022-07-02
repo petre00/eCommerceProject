@@ -913,7 +913,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
   color: #FFFFFF;
 }
 .blog-section .veg {
@@ -988,11 +987,10 @@
   border-radius: 12px;
 }
 
-.footer-menu-row {
-  flex-direction: column;
-  align-content: space-between;
+.footer-menu {
+  width: 1170px;
 }
-.footer-menu-row .footer-title {
+.footer-menu .footer-menu-row span {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1000,7 +998,13 @@
   line-height: 27px;
   color: #151515;
 }
-.footer-menu-row span {
+.footer-menu .footer-menu-row ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-menu .footer-menu-row ul li {
+  padding-top: 16px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1008,15 +1012,18 @@
   line-height: 19px;
   color: #6A983C;
 }
-.footer-menu-row span a {
+.footer-menu .footer-menu-row ul li a {
+  text-decoration: none;
   color: #6A983C;
 }
-.footer-menu-row span a:visited {
+.footer-menu .footer-menu-row ul li a:visited {
+  text-decoration: none;
   color: #6A983C;
 }
 
 .footer-tags {
-  padding: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .footer-tags .title-tags {
   margin-bottom: 16px;
@@ -1052,9 +1059,9 @@
 }
 
 .footer-copyright {
+  padding-left: 45px;
   display: flex;
   justify-content: left;
-  margin-left: 45px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;

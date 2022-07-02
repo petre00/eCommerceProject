@@ -54,10 +54,8 @@
           align-content: center;
           text-align: center;
           margin-left: 24px;
-          //margin-top: 150px;
 
           .circle-wh {
-            //position: absolute;
             margin-bottom: 24px;
             height: 32px;
             width: 32px;
@@ -71,7 +69,6 @@
             @include open-sans-normal;
             font-weight: 400;
             font-size: 12px;
-            line-height: 16px;
             color: $col-backg-2;
           }
         }

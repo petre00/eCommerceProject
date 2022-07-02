@@ -3,39 +3,49 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
-.footer-menu-row {
-  //display: flex;
-  flex-direction: column;
-  align-content: space-between;
+.footer-menu {
+  width: 1170px;
 
-  .footer-title {
-    @include popins-normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color: $col-line-1;
-  }
-
-  span {
-    @include open-sans-normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: $col-text-1;
-
-    a {
-      color: $col-text-1;
+  .footer-menu-row {
+    span {
+      @include popins-normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: $col-line-1;
     }
 
-    a:visited {
-      color: $col-text-1;
+    ul {
+      @include reset-list;
+
+      li {
+        padding-top: 16px;
+        @include open-sans-normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $col-text-1;
+
+        a {
+          text-decoration: none;
+          color: $col-text-1;
+        }
+
+        a:visited {
+          text-decoration: none;
+          color: $col-text-1;
+        }
+      }
     }
+
   }
 }
 
 .footer-tags {
-  padding: 45px;
-  .title-tags{
+  padding-left: 45px;
+  padding-right: 45px;
+
+  .title-tags {
     margin-bottom: 16px;
     @include popins-normal;
     font-weight: 600;
@@ -46,6 +56,7 @@
 
   ul {
     @include reset-list;
+
     li {
       display: inline-flex;
       padding: 4px 10px;
@@ -59,7 +70,8 @@
       color: $col-line-1;
       background: $col-backg-3;
       border-radius: 12px;
-      &:last-child{
+
+      &:last-child {
         margin-right: 0;
       }
     }
@@ -67,9 +79,10 @@
 }
 
 .footer-copyright {
+  padding-left: 45px;
   display: flex;
   justify-content: left;
-  margin-left: 45px;
+
   @include open-sans-normal;
   font-weight: 400;
   font-size: 14px;
