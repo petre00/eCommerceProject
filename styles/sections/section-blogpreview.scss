@@ -5,14 +5,15 @@
 
 .blog-section {
   display: flex;
+
   .tips {
+    margin-left: 45px;
+
     .gradient-container {
       display: block;
-      width: 469px;
+      width: 468px;
       height: 400px;
-      margin-left: 45px;
-      margin-top: 38px;
-      border: 1px solid black;
+      margin-top: 36px;
 
       .dinnert {
         text-align: center;
@@ -31,9 +32,12 @@
 
       .g-container {
         display: flex;
+        flex-direction: column;
         margin-top: 152px;
         height: 206px;
         background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
 
         p {
           margin-left: 24px;
@@ -47,18 +51,99 @@
 
         .g-bottom {
           display: flex;
+          align-content: center;
+          text-align: center;
+          margin-left: 24px;
+          //margin-top: 150px;
 
           .circle-wh {
-            position: absolute;
+            //position: absolute;
+            margin-bottom: 24px;
             height: 32px;
             width: 32px;
-            margin-left: 24px;
-            margin-top: 150px;
             background: $col-backg-1;
             border-radius: 50%;
           }
+
+          span {
+            margin-left: 8px;
+            margin-right: 16px;
+            @include open-sans-normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: $col-backg-2;
+          }
         }
       }
+    }
+  }
+
+  .veg {
+    margin-top: 36px;
+    margin-left: 31px;
+
+    .veg-photo {
+      width: 269px;
+      height: 180px;
+      background: $col-backg-3;
+      border-radius: 12px;
+    }
+
+    .veg-elipse {
+      text-align: center;
+      width: 80px;
+      height: 18px;
+      margin-top: 24px;
+      background: $col-backg-4;
+      border-radius: 12px;
+      @include popins-normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: $col-text-1;
+    }
+
+    p {
+      width: 269px;
+      @include popins-normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: $col-line-1;
+    }
+
+    span {
+      @include autor-date;
+    }
+  }
+
+  .mini-details {
+    p {
+      width: 235px;
+      margin-top: 45px;
+      margin-left: 31px;
+      @include popins-normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: $col-line-1;
+    }
+
+    span {
+      margin-left: 31px;
+      @include autor-date;
+    }
+  }
+
+  .mini-photos {
+    .mini-photo {
+      margin-top: 34px;
+      margin-left: 16px;
+      width: 96px;
+      height: 96px;
+      background: $col-backg-3;
+      border-radius: 12px;
     }
   }
 }
