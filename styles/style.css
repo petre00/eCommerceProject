@@ -1016,29 +1016,39 @@
 }
 
 .footer-tags {
-  display: flex;
-  align-content: space-around;
+  padding: 45px;
+}
+.footer-tags .title-tags {
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
 }
 .footer-tags ul {
-  display: inline-flex;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 45px;
-  width: 1170px;
+}
+.footer-tags ul li {
+  display: inline-flex;
+  padding: 4px 10px;
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
   color: #151515;
-}
-.footer-tags ul li {
-  text-align: center;
-  margin-right: 16px;
-  height: 26px;
   background: #F5F5F5;
   border-radius: 12px;
+}
+.footer-tags ul li:last-child {
+  margin-right: 0;
 }
 
 .footer-copyright {

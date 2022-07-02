@@ -34,28 +34,34 @@
 }
 
 .footer-tags {
-  display: flex;
-  align-content: space-around;
-
-  ul {
-    display: inline-flex;
-
-    @include reset-list;
-    margin-left: 45px;
-    width: 1170px;
+  padding: 45px;
+  .title-tags{
+    margin-bottom: 16px;
     @include popins-normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 27px;
     color: $col-line-1;
+  }
 
+  ul {
+    @include reset-list;
     li {
-
+      display: inline-flex;
+      padding: 4px 10px;
       text-align: center;
       margin-right: 16px;
-      height: 26px;
+      margin-bottom: 16px;
+      @include popins-normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: $col-line-1;
       background: $col-backg-3;
       border-radius: 12px;
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 }
