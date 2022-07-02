@@ -11,3 +11,5 @@
 .icon-compare:before { content: '\e809'; } /* '' */
 .icon-star-full:before { content: '\e80a'; } /* '' */
 .icon-user:before { content: '\e80b'; } /* '' */
+.icon-grid-view:before { content: '\e80c'; } /* '' */
+.icon-list-view:before { content: '\e80d'; } /* '' */

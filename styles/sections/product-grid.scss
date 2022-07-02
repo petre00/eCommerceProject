@@ -1,1 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap');
 
+@import "../partials/variables";
+@import "../partials/mixins";
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background: $col-backg-2;
+  ul {
+    @include reset-list;
+
+    li {
+      display: inline-flex;
+      @include open-sans-normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $col-line-1;
+      &:first-child{
+        margin-left: 45px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: $col-text-3;
+      }
+    }
+  }
+}
+.category-name{
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  height: 64px;
+  background: $col-backg-2;
+  H1{
+    margin-left: 45px;
+    @include popins-normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: $col-line-1;
+  }
+}
