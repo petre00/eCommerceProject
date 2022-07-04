@@ -8,6 +8,7 @@
   align-items: center;
   height: 45px;
   background: $col-backg-2;
+
   ul {
     @include reset-list;
 
@@ -18,7 +19,8 @@
       font-size: 12px;
       line-height: 16px;
       color: $col-line-1;
-      &:first-child{
+
+      &:first-child {
         margin-left: 45px;
       }
 
@@ -33,18 +35,37 @@
     }
   }
 }
-.category-name{
+
+.category-name {
   display: flex;
   justify-content: space-between;
-  //align-items: center;
   height: 64px;
   background: $col-backg-2;
-  H1{
+
+  .right-content {
+    display: flex;
+  }
+
+  H1 {
     margin-left: 45px;
     @include popins-normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 48px;
     color: $col-line-1;
   }
+
+  i {
+    font-size: 12px;
+    color: #6A983C;
+  }
+
+  span {
+    @include open-sans-normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #151515;
+  }
+
+
 }
