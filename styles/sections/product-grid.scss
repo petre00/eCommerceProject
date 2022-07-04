@@ -44,9 +44,12 @@
 
   .right-content {
     display: flex;
+    align-items: center;
   }
 
   H1 {
+    margin: 0;
+    padding: 0;
     margin-left: 45px;
     @include popins-normal;
     font-weight: 600;
@@ -56,16 +59,43 @@
 
   i {
     font-size: 12px;
-    color: #6A983C;
+    color: $col-text-1;
+
+    &:last-child {
+      color: $col-text-3;
+    }
   }
 
   span {
+    margin-right: 25px;
     @include open-sans-normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #151515;
+    color: $col-line-1;
+
+    &:nth-child(1) {
+      color: $col-text-3;
+    }
+
+    &:last-child {
+      margin-right: 45px;
+      color: $col-text-3;
+    }
   }
 
+  .nr-products {
+    text-align: center;
+    margin-right: 4px;
+    width: 32px;
+    height: 18px;
+    background: $col-backg-4;
+    border-radius: 12px;
+    @include popins-normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $col-text-4;
+  }
 
 }
