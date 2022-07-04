@@ -79,6 +79,7 @@
   .current-view {
     color: $col-line-1;
   }
+
   .current-view-icon {
     color: $col-text-1;
   }
@@ -97,4 +98,24 @@
     color: $col-text-4;
   }
 
+}
+
+.filters-select {
+  display: flex;
+
+  .filter-one {
+    @include filter-select-container;
+  }
+
+  .filter-second {
+    @include filter-select-container;
+  }
+
+  .filter-three {
+    @include filter-select-container;
+  }
+
+  .filter-last {
+    @include filter-select-container;
+  }
 }
