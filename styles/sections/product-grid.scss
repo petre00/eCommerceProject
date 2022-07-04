@@ -47,7 +47,7 @@
     align-items: center;
   }
 
-  H1 {
+  h1 {
     margin: 0;
     padding: 0;
     margin-left: 45px;
@@ -72,16 +72,15 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    color: $col-text-3;
+
+  }
+
+  .current-view {
     color: $col-line-1;
-
-    &:nth-child(1) {
-      color: $col-text-3;
-    }
-
-    &:last-child {
-      margin-right: 45px;
-      color: $col-text-3;
-    }
+  }
+  .current-view-icon {
+    color: $col-text-1;
   }
 
   .nr-products {

@@ -1112,7 +1112,7 @@
   display: flex;
   align-items: center;
 }
-.category-name H1 {
+.category-name h1 {
   margin: 0;
   padding: 0;
   margin-left: 45px;
@@ -1136,14 +1136,13 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  color: #A9A9A9;
+}
+.category-name .current-view {
   color: #151515;
 }
-.category-name span:nth-child(1) {
-  color: #A9A9A9;
-}
-.category-name span:last-child {
-  margin-right: 45px;
-  color: #A9A9A9;
+.category-name .current-view-icon {
+  color: #6A983C;
 }
 .category-name .nr-products {
   text-align: center;
