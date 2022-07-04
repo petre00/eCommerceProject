@@ -102,8 +102,36 @@
 
 .filters-select {
   display: flex;
+  justify-content: flex-start;
+
+  span {
+    @include open-sans-normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $col-line-1;
+  }
+
+  label {
+    margin-left: 10px;
+    margin-right: 16px;
+    @include open-sans-normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $col-line-1;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  i {
+    margin-left: 8px;
+    font-size: 8px;
+  }
 
   .filter-one {
+    margin-left: 45px;
     @include filter-select-container;
   }
 
@@ -113,9 +141,76 @@
 
   .filter-three {
     @include filter-select-container;
+
+    span {
+      @include popins-normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .oval {
+    width: 46px;
+    @include filter-oval-values;
+    @include popins-normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $col-line-1;
+  }
+
+  input {
+    margin: 0;
+    padding: 0;
+    margin-left: 18px;
   }
 
   .filter-last {
     @include filter-select-container;
+    @include open-sans-normal;
+
+    .number {
+      width: 28px;
+      @include filter-oval-values;
+      @include open-sans-normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .vertline {
+      height: 20px;
+      width: 24px;
+      border-left: 1px solid $col-div-1;
+
+
+    }
+  }
+}
+.active-filters{
+  display: flex;
+  text-align: center;
+  span{
+    margin-left: 45px;
+    margin-top: 16px;
+    @include popins-normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $col-text-3;
+  }
+  .applied-filter{
+    margin-left: 12px;
+    margin-top: 16px;
+    width: 118px;
+    height: 18px;
+    background: $col-backg-4;
+    border-radius: 12px;
+    @include popins-normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $col-text-1;
   }
 }

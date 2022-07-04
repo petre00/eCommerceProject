@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
 }
+
 @mixin popins-normal {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -13,13 +14,13 @@
   font-style: normal;
 }
 
-@mixin font-400-12-16{
+@mixin font-400-12-16 {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
 
-@mixin autor-date{
+@mixin autor-date {
   margin-right: 16px;
   @include open-sans-normal;
   font-weight: 400;
@@ -28,7 +29,7 @@
   color: $col-line-1;
 }
 
-@mixin filter-select-container{
+@mixin filter-select-container {
   display: flex;
   align-items: center;
   width: 236px;
@@ -37,4 +38,13 @@
   background: $col-backg-1;
   border: 1px solid $col-div-1;
   border-radius: 12px;
+}
+
+@mixin filter-oval-values {
+  text-align: center;
+  height: 18px;
+  margin-right: 24px;
+  border: 1px solid $col-bord-3;
+  border-radius: 12px;
+  color: $col-line-1;
 }

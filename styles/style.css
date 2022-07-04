@@ -1161,8 +1161,35 @@
 
 .filters-select {
   display: flex;
+  justify-content: flex-start;
+}
+.filters-select span {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.filters-select label {
+  margin-left: 10px;
+  margin-right: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+.filters-select label:last-child {
+  margin-right: 0;
+}
+.filters-select i {
+  margin-left: 8px;
+  font-size: 8px;
 }
 .filters-select .filter-one {
+  margin-left: 45px;
   display: flex;
   align-items: center;
   width: 236px;
@@ -1192,6 +1219,33 @@
   border: 1px solid #D1D1D1;
   border-radius: 12px;
 }
+.filters-select .filter-three span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+.filters-select .oval {
+  width: 46px;
+  text-align: center;
+  height: 18px;
+  margin-right: 24px;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+  color: #151515;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+.filters-select input {
+  margin: 0;
+  padding: 0;
+  margin-left: 18px;
+}
 .filters-select .filter-last {
   display: flex;
   align-items: center;
@@ -1201,6 +1255,56 @@
   background: #F9F9F9;
   border: 1px solid #D1D1D1;
   border-radius: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+.filters-select .filter-last .number {
+  width: 28px;
+  text-align: center;
+  height: 18px;
+  margin-right: 24px;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+  color: #151515;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+.filters-select .filter-last .vertline {
+  height: 20px;
+  width: 24px;
+  border-left: 1px solid #D1D1D1;
+}
+
+.active-filters {
+  display: flex;
+  text-align: center;
+}
+.active-filters span {
+  margin-left: 45px;
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+.active-filters .applied-filter {
+  margin-left: 12px;
+  margin-top: 16px;
+  width: 118px;
+  height: 18px;
+  background: #F4F8EC;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
 }
 
 body {
@@ -1241,6 +1345,7 @@ body {
 }
 
 .filter-bar {
+  display: block;
   height: 108px;
   background: #FFFFFF;
 }
