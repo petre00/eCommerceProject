@@ -649,6 +649,9 @@
 .product .product-evaluation i {
   font-size: 13px;
 }
+.product .product-evaluation .icon-star-light {
+  color: #EBEBEB;
+}
 .product .buy-button {
   align-self: flex-end;
   margin-top: 21px;
