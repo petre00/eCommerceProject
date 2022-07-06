@@ -1,6 +1,7 @@
-@import "grid-system/grid";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap');
 
-@import "general/footer";
+@import "grid-system/grid"; // the grid
+
 @import "general/listing-products";
 @import "general/menu";
 @import "general/top";
@@ -59,5 +60,10 @@ body {
 .filter-bar{
   display: block;
   height: 108px;
+  background: $col-backg-2;
+}
+
+.product-categories-grid{
+  height: 1304px;
   background: $col-backg-2;
 }

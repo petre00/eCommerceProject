@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap");
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -650,6 +643,12 @@
   line-height: 16px;
   color: #575757;
 }
+.product .product-evaluation {
+  padding-left: 16px;
+}
+.product .product-evaluation i {
+  font-size: 13px;
+}
 .product .buy-button {
   align-self: flex-end;
   margin-top: 21px;
@@ -1186,7 +1185,10 @@
 }
 .filters-select i {
   margin-left: 8px;
-  font-size: 8px;
+  font-size: 6px;
+}
+.filters-select i:hover {
+  cursor: pointer;
 }
 .filters-select .filter-one {
   margin-left: 45px;
@@ -1307,6 +1309,10 @@
   color: #6A983C;
 }
 
+.product-grid {
+  display: flex;
+}
+
 body {
   background: #F9F9F9;
   margin: 0;
@@ -1347,6 +1353,11 @@ body {
 .filter-bar {
   display: block;
   height: 108px;
+  background: #FFFFFF;
+}
+
+.product-categories-grid {
+  height: 1304px;
   background: #FFFFFF;
 }
 
