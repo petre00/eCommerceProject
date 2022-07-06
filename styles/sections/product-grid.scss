@@ -234,10 +234,14 @@
   .category-products-num {
     display: flex;
     justify-content: space-between;
+    margin-top: 12px;
+
+    &:first-child {
+      margin-top: 16px;
+    }
 
     span {
       margin-left: 45px;
-      margin-bottom: 12px;
       @include open-sans-normal;
       font-weight: 400;
       font-size: 14px;
@@ -246,6 +250,7 @@
     }
 
     .numbers-of {
+      text-align: center;
       width: 38px;
       height: 18px;
       background: $col-backg-4;
