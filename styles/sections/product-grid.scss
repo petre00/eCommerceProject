@@ -320,4 +320,107 @@
       color: $col-div-1;
     }
   }
+
+  .price-select {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-left: 45px;
+
+    .price-select-labels {
+      display: flex;
+    }
+
+    .price-min-max-select {
+      flex-direction: column;
+
+      .price-select-head {
+        padding-top: 16px;
+        display: flex;
+
+        span {
+          margin-right: 33px;
+          width: 109px;
+          @include popins-normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          color: $col-line-1;
+        }
+      }
+
+      .min-max-price-inputs {
+        padding-bottom: 31px;
+        display: flex;
+
+        .min-max-price {
+          text-align: center;
+          margin-right: 14px;
+          width: 109px;
+          height: 42px;
+          background: $col-backg-1;
+          border: 1px solid $col-div-1;
+          border-radius: 12px;
+        }
+
+        p {
+          margin-right: 14px;
+          @include open-sans-normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: $col-text-3;
+        }
+
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 72px;
+          height: 42px;
+          @include open-sans-normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: $col-text-3;
+        }
+
+        input:active {
+          border: none;
+          outline: none;
+        }
+      }
+
+
+    }
+
+    .price-button-select {
+      display: flex;
+      align-content: center;
+
+      .price-apply {
+        text-align: center;
+        margin-right: 34px;
+        width: 78px;
+        height: 48px;
+        background: $col-text-1;
+        border: 2px solid $col-bord-1;
+        border-radius: 12px;
+        @include popins-normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        color: $col-backg-2;
+      }
+      .price-reset{
+        text-align: center;
+        width: 78px;
+        height: 48px;
+        @include popins-normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        color: $col-text-3;
+      }
+    }
+  }
 }
