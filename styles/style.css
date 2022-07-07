@@ -1356,10 +1356,13 @@
   color: #6A983C;
 }
 .categories-column .brands {
-  display: flex;
   flex-direction: column;
   padding-top: 48px;
   padding-left: 45px;
+}
+.categories-column .brands .brands-filters-select {
+  align-content: center;
+  padding-bottom: 16px;
 }
 .categories-column .brands label {
   font-family: "Open Sans", sans-serif;
@@ -1370,9 +1373,32 @@
   color: #151515;
 }
 .categories-column .brands input[type=radio] {
-  border: 1.5px solid #D1D1D1;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #D1D1D1;
   padding: 0.5em;
   -webkit-appearance: none;
+}
+.categories-column .rating {
+  flex-direction: column;
+  padding-top: 48px;
+  padding-left: 45px;
+}
+.categories-column .rating input[type=radio] {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #D1D1D1;
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+.categories-column .rating i {
+  font-size: 13px;
+}
+.categories-column .rating .icon-star-full {
+  color: #FDBC15;
+}
+.categories-column .rating .icon-star-light {
+  color: #D1D1D1;
 }
 
 body {
