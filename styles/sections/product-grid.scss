@@ -1,39 +1,6 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  height: 45px;
-  background: $col-backg-2;
-
-  ul {
-    @include reset-list;
-
-    li {
-      display: inline-flex;
-      @include open-sans-normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      color: $col-line-1;
-
-      &:first-child {
-        margin-left: 45px;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      a:visited {
-        text-decoration: none;
-        color: $col-text-3;
-      }
-    }
-  }
-}
-
 .category-name {
   display: flex;
   justify-content: space-between;
@@ -411,7 +378,8 @@
         line-height: 22px;
         color: $col-backg-2;
       }
-      .price-reset{
+
+      .price-reset {
         text-align: center;
         width: 78px;
         height: 48px;

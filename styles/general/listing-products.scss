@@ -1,1 +1,101 @@
+@import "../partials/variables";
+@import "../partials/mixins";
 
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background: $col-backg-2;
+
+  ul {
+    @include reset-list;
+
+    li {
+      display: inline-flex;
+      @include open-sans-normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $col-line-1;
+
+      &:first-child {
+        margin-left: 45px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: $col-text-3;
+      }
+    }
+  }
+}
+
+.page-numbers {
+  display: flex;
+
+  .page {
+    margin-left: 45px;
+    @include open-sans-normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $col-text-3;
+  }
+  p{
+    margin-left: 8px;
+    @include open-sans-normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $col-line-1;
+  }
+}
+.button-col{
+
+  .button-more{
+    text-align: center;
+    width: 214px;
+    height: 47px;
+    left: calc(50% - 214px/2 - 0.5px);
+    background: $col-text-1;
+    border: 2px solid $col-bord-1;
+    border-radius: 12px;
+    @include popins-normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $col-backg-2;
+    i{
+      margin-left: 10px;
+      font-size: 8px;
+    }
+  }
+}
+.number-of-products{
+  display: flex;
+.no-of-prod{
+  text-align: center;
+  width: 39px;
+  height: 18px;
+  background: $col-backg-4;
+  border-radius: 12px;
+  @include popins-normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $col-text-4;
+}
+  span{
+    margin-left: 4px;
+    margin-right: 45px;
+    @include open-sans-normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $col-text-3;
+  }
+}
