@@ -45,7 +45,8 @@
     line-height: 16px;
     color: $col-text-3;
   }
-  p{
+
+  p {
     margin-left: 8px;
     @include open-sans-normal;
     font-weight: 400;
@@ -54,13 +55,17 @@
     color: $col-line-1;
   }
 }
-.button-col{
 
-  .button-more{
-    text-align: center;
+.button-col {
+  display: flex;
+  justify-content: center;
+
+  .button-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 214px;
     height: 47px;
-    left: calc(50% - 214px/2 - 0.5px);
     background: $col-text-1;
     border: 2px solid $col-bord-1;
     border-radius: 12px;
@@ -69,27 +74,31 @@
     font-size: 15px;
     line-height: 22px;
     color: $col-backg-2;
-    i{
+
+    i {
       margin-left: 10px;
       font-size: 8px;
     }
   }
 }
-.number-of-products{
+
+.number-of-products {
   display: flex;
-.no-of-prod{
-  text-align: center;
-  width: 39px;
-  height: 18px;
-  background: $col-backg-4;
-  border-radius: 12px;
-  @include popins-normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  color: $col-text-4;
-}
-  span{
+
+  .no-of-prod {
+    text-align: center;
+    width: 39px;
+    height: 18px;
+    background: $col-backg-4;
+    border-radius: 12px;
+    @include popins-normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $col-text-4;
+  }
+
+  span {
     margin-left: 4px;
     margin-right: 45px;
     @include open-sans-normal;

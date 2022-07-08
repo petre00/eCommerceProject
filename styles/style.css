@@ -251,11 +251,16 @@
   color: #151515;
 }
 
+.button-col {
+  display: flex;
+  justify-content: center;
+}
 .button-col .button-more {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 214px;
   height: 47px;
-  left: calc(50% - 107px - 0.5px);
   background: #6A983C;
   border: 2px solid #46760A;
   border-radius: 12px;
@@ -1091,6 +1096,7 @@
 }
 
 .footer-menu {
+  padding-top: 64px;
   width: 1170px;
 }
 .footer-menu .footer-menu-row span {
@@ -1442,10 +1448,11 @@
   color: #151515;
 }
 .categories-column .brands input[type=radio] {
+  padding: 0;
+  margin: 0;
   height: 20px;
   width: 20px;
   border: 2px solid #D1D1D1;
-  padding: 0.5em;
   -webkit-appearance: none;
 }
 .categories-column .rating {
@@ -1454,10 +1461,11 @@
   padding-left: 45px;
 }
 .categories-column .rating input[type=radio] {
+  margin: 0;
+  padding: 0;
   height: 20px;
   width: 20px;
   border: 2px solid #D1D1D1;
-  padding: 0.5em;
   -webkit-appearance: none;
 }
 .categories-column .rating i {
@@ -1538,7 +1546,9 @@
   align-content: center;
 }
 .categories-column .price-select .price-button-select .price-apply {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 34px;
   width: 78px;
   height: 48px;
@@ -1553,7 +1563,9 @@
   color: #FFFFFF;
 }
 .categories-column .price-select .price-button-select .price-reset {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 78px;
   height: 48px;
   font-family: "Poppins", sans-serif;

@@ -2,6 +2,7 @@
 @import "../partials/mixins";
 
 .footer-menu {
+  padding-top: 64px;
   width: 1170px;
 
   .footer-menu-row {
@@ -35,7 +36,6 @@
         }
       }
     }
-
   }
 }
 
