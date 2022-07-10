@@ -1465,7 +1465,7 @@
   padding-top: 48px;
   padding-left: 45px;
 }
-.categories-column .rating input[type=radio] {
+.categories-column .rating input[type=checkbox] {
   margin: 0;
   padding: 0;
   height: 20px;
