@@ -231,6 +231,8 @@
 
 .page-numbers {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .page-numbers .page {
   margin-left: 45px;
@@ -253,6 +255,7 @@
 
 .button-col {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .button-col .button-more {
@@ -278,6 +281,8 @@
 
 .number-of-products {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .number-of-products .no-of-prod {
   text-align: center;
