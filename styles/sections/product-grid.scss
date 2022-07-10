@@ -68,6 +68,53 @@
   display: flex;
   justify-content: flex-start;
 
+  .filter-round {
+    width: 236px;
+    margin-left: 45px;
+    padding-left: 18px;
+    @include filter-select-container;
+
+    input[type=radio] {
+      padding: 0;
+      margin: 0;
+      height: 20px;
+      width: 20px;
+      border: 2px solid $col-div-1;
+      -webkit-appearance: auto;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .filter-square {
+    width: 151px;
+    padding-left: 18px;
+
+    span {
+      @include popins-normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include filter-select-container;
+
+    input[type=checkbox] {
+      padding: 0;
+      margin: 0;
+      height: 20px;
+      width: 20px;
+      border: 2px solid $col-div-1;
+      -webkit-appearance: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
   span {
     @include open-sans-normal;
     font-weight: 400;
@@ -99,26 +146,6 @@
     }
   }
 
-  .filter-one {
-    margin-left: 45px;
-    @include filter-select-container;
-  }
-
-  .filter-second {
-    @include filter-select-container;
-  }
-
-  .filter-three {
-    @include filter-select-container;
-
-    span {
-      @include popins-normal;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 18px;
-    }
-  }
-
   .oval {
     width: 46px;
     @include filter-oval-values;
@@ -135,11 +162,12 @@
   }
 
   .filter-last {
-    @include filter-select-container;
+    padding-left: 18px;
+    width: 236px;
     @include open-sans-normal;
 
     .number {
-      width: 28px;
+      width: 24px;
       @include filter-oval-values;
       @include open-sans-normal;
       font-weight: 600;
@@ -183,6 +211,15 @@
     font-size: 12px;
     line-height: 18px;
     color: $col-text-1;
+
+    i {
+      margin-left: 6px;
+      font-size: 8px;
+      color: $col-text-7;
+      &:hover{
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -202,8 +239,10 @@
     padding-top: 48px;
 
     .category-products-num {
+      width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-top: 12px;
 
       &:first-child {
@@ -240,11 +279,14 @@
     padding-left: 45px;
 
     .brands-filters-select {
+      display: flex;
+      align-items: center;
       align-content: center;
       padding-bottom: 16px;
     }
 
     label {
+      margin-left: 10px;
       @include open-sans-normal;
       font-weight: 400;
       font-size: 14px;
@@ -259,6 +301,10 @@
       width: 20px;
       border: 2px solid $col-div-1;
       -webkit-appearance: none;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
   }
@@ -268,13 +314,24 @@
     padding-top: 48px;
     padding-left: 45px;
 
+    .brands-filters-select {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      padding-bottom: 16px;
+    }
+
     input[type=checkbox] {
-      margin: 0;
+      margin: 0 10px 0 0;
       padding: 0;
       height: 20px;
       width: 20px;
       border: 2px solid $col-div-1;
       -webkit-appearance: none;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     i {

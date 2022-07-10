@@ -1244,6 +1244,58 @@
   display: flex;
   justify-content: flex-start;
 }
+.filters-select .filter-round {
+  width: 236px;
+  margin-left: 45px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-right: 16px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+.filters-select .filter-round input[type=radio] {
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #D1D1D1;
+  -webkit-appearance: auto;
+}
+.filters-select .filter-round input[type=radio]:hover {
+  cursor: pointer;
+}
+.filters-select .filter-square {
+  width: 151px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-right: 16px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+.filters-select .filter-square span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+.filters-select .filter-square input[type=checkbox] {
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #D1D1D1;
+  -webkit-appearance: none;
+}
+.filters-select .filter-square input[type=checkbox]:hover {
+  cursor: pointer;
+}
 .filters-select span {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -1272,44 +1324,6 @@
 .filters-select i:hover {
   cursor: pointer;
 }
-.filters-select .filter-one {
-  margin-left: 45px;
-  display: flex;
-  align-items: center;
-  width: 236px;
-  height: 42px;
-  margin-right: 16px;
-  background: #F9F9F9;
-  border: 1px solid #D1D1D1;
-  border-radius: 12px;
-}
-.filters-select .filter-second {
-  display: flex;
-  align-items: center;
-  width: 236px;
-  height: 42px;
-  margin-right: 16px;
-  background: #F9F9F9;
-  border: 1px solid #D1D1D1;
-  border-radius: 12px;
-}
-.filters-select .filter-three {
-  display: flex;
-  align-items: center;
-  width: 236px;
-  height: 42px;
-  margin-right: 16px;
-  background: #F9F9F9;
-  border: 1px solid #D1D1D1;
-  border-radius: 12px;
-}
-.filters-select .filter-three span {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-}
 .filters-select .oval {
   width: 46px;
   text-align: center;
@@ -1330,19 +1344,13 @@
   margin: 0 0 0 18px;
 }
 .filters-select .filter-last {
-  display: flex;
-  align-items: center;
+  padding-left: 18px;
   width: 236px;
-  height: 42px;
-  margin-right: 16px;
-  background: #F9F9F9;
-  border: 1px solid #D1D1D1;
-  border-radius: 12px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
 }
 .filters-select .filter-last .number {
-  width: 28px;
+  width: 24px;
   text-align: center;
   height: 18px;
   margin-right: 24px;
@@ -1389,6 +1397,14 @@
   line-height: 18px;
   color: #6A983C;
 }
+.active-filters .applied-filter i {
+  margin-left: 6px;
+  font-size: 8px;
+  color: #C8DEB3;
+}
+.active-filters .applied-filter i:hover {
+  cursor: pointer;
+}
 
 .categories-column {
   flex-direction: column;
@@ -1406,8 +1422,10 @@
   padding-top: 48px;
 }
 .categories-column .categories .category-products-num {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 12px;
 }
 .categories-column .categories .category-products-num:first-child {
@@ -1441,10 +1459,13 @@
   padding-left: 45px;
 }
 .categories-column .brands .brands-filters-select {
+  display: flex;
+  align-items: center;
   align-content: center;
   padding-bottom: 16px;
 }
 .categories-column .brands label {
+  margin-left: 10px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1460,18 +1481,30 @@
   border: 2px solid #D1D1D1;
   -webkit-appearance: none;
 }
+.categories-column .brands input[type=radio]:hover {
+  cursor: pointer;
+}
 .categories-column .rating {
   flex-direction: column;
   padding-top: 48px;
   padding-left: 45px;
 }
+.categories-column .rating .brands-filters-select {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 16px;
+}
 .categories-column .rating input[type=checkbox] {
-  margin: 0;
+  margin: 0 10px 0 0;
   padding: 0;
   height: 20px;
   width: 20px;
   border: 2px solid #D1D1D1;
   -webkit-appearance: none;
+}
+.categories-column .rating input[type=checkbox]:hover {
+  cursor: pointer;
 }
 .categories-column .rating i {
   font-size: 13px;
