@@ -229,13 +229,71 @@
   color: #A9A9A9;
 }
 
+.dualslider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  position: relative;
+  height: 20px;
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  bottom: 0;
+  width: 20px;
+  height: 100%;
+}
+.edge:after {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  bottom: -30px;
+  top: -30px;
+}
+.edge:nth-of-type(1) {
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  left: 39px;
+  z-index: 3;
+}
+.edge:nth-of-type(2) {
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  right: 114px;
+  z-index: 3;
+}
+
+.track {
+  width: 251px;
+  background: #EBEBEB;
+  border-radius: 12px;
+  height: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.selected-area {
+  right: 116px;
+  position: absolute;
+  background: #6A983C;
+  height: 6px;
+  width: 80px;
+  z-index: 2;
+}
+
 .page-numbers {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .page-numbers .page {
-  margin-left: 45px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -299,7 +357,6 @@
 }
 .number-of-products span {
   margin-left: 4px;
-  margin-right: 45px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
